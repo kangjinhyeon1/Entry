@@ -7,16 +7,21 @@
 }
 header{
     background: #5F85BB;  
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+body{
+    background: #E0E0E0;
+}
 a{
     margin-right: 10px;
     color: white;
+    cursor: pointer;
+    text-decoration: none;
 }
-p{
+.bar{
     background: white;
     height: 20px;
     width: 1px;
@@ -26,4 +31,7 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+img{
+    width: 130px;
 }
