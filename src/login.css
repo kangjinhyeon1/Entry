@@ -8,4 +8,29 @@ section{
     width: 350px;
     height: 450px;
     background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
 }
+.login{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.id, .password{
+    font-size: 12px;
+}
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid darkgray;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  input[type="checkbox"]:checked {
+    content: '✔';
+  }
