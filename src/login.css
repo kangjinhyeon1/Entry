@@ -16,21 +16,61 @@ section{
 .login{
     font-size: 24px;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 60px;
 }
-.id, .password{
+p{
+    font-size: 14px;
+    color: black;
+}
+label{
+    font-size: 16px;
+}
+.id{
+    margin-top: 60px;
+}
+.password{
+    margin-top: 12px;
+}
+.idsave{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+.eye{
+    width: 20px;
+    position: absolute;
+    top: 410px;
+    left: 870px;
+}
+input{
+    border: 1px solid darkgray;
+    border-radius: 3px;
     font-size: 12px;
+    width: 260px;
+    height: 34px;
+    padding: 12px;
+    outline: none;
 }
-input[type="checkbox"] {
+input[type="checkbox"]{
     width: 16px;
     height: 16px;
     border-radius: 50%;
     border: 1px solid darkgray;
     appearance: none;
     cursor: pointer;
-    transition: background 0.2s;
+    padding: 10px;
+    margin-right: 8px;
   }
-
-  input[type="checkbox"]:checked {
-    content: '✔';
+input[type="chckbox"]:checked ::after{
+    content:'✔';
+}
+  .success{
+    font-size: 14px;
+    width: 260px;
+    height: 34px;
+    margin-top: 70px;
+    border: none;
+    background: lightgray;
+    color: white;
+    border-radius: 3px;
   }
