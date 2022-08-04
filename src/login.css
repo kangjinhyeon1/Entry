@@ -37,9 +37,9 @@ label{
     align-items: center;
 }
 .eye{
-    width: 20px;
+    width: 15px;
     position: absolute;
-    top: 410px;
+    top: 415px;
     left: 870px;
 }
 input{
