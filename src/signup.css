@@ -1,0 +1,64 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+.container{
+    width: 350px;
+    height: 450px;
+    background: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 45px;
+}
+.signup{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+p{
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+.name{
+    margin-top: 12px;
+}
+.id, .password, .passwordcheck{
+    margin-top: 8px;
+}
+.eye{
+    width: 15px;
+    position: absolute;
+    top: 415px;
+    left: 870px;
+    bottom: 320px;
+}
+.checkeye{
+    width: 15px;
+    position: absolute;
+    left: 870px;
+    top: 485px;
+}
+input{
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    font-size: 12px;
+    width: 260px;
+    height: 34px;
+    padding: 12px;
+    outline: none;
+    margin-top: 8px;
+}
+  .success{
+    font-size: 14px;
+    width: 260px;
+    height: 34px;
+    margin-top: 30px;
+    border: none;
+    background: lightgray;
+    color: white;
+    border-radius: 3px;
+  }
