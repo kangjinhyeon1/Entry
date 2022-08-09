@@ -26,13 +26,10 @@ p{
 .name{
     margin-top: 12px;
 }
-.id, .password, .passwordcheck{
-    margin-top: 8px;
-}
 .eye{
     width: 15px;
     position: absolute;
-    top: 415px;
+    top: 425px;
     left: 870px;
     bottom: 320px;
 }
@@ -40,7 +37,7 @@ p{
     width: 15px;
     position: absolute;
     left: 870px;
-    top: 485px;
+    top: 495px;
 }
 input{
     border: 1px solid darkgray;
@@ -52,6 +49,11 @@ input{
     outline: none;
     margin-top: 8px;
 }
+.error{
+    font-size: 1px;
+    height: 12px;
+    color: red;
+}
   .success{
     font-size: 14px;
     width: 260px;
@@ -61,4 +63,5 @@ input{
     background: lightgray;
     color: white;
     border-radius: 3px;
+    cursor: pointer;
   }
