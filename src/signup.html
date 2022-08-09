@@ -22,39 +22,41 @@
     <section>
       <div class="container">
         <p class="signup">회원가입</p>
+        
         <div class="name">
           <p>이름</p>
           <input type="text" placeholder="이름을 입력해 주새요." id="inputname" />
-          <div id="nameError"></div>
+          <div id="nameError" class="error"></div>
         </div>
+        
         <div class="id">
           <p>아이디</p>
           <input type="text" placeholder="아이디를 입력해 주새요." id="inputid" />
-          <div id="idError"></div>
+          <div id="idError" class="error"></div>
         </div>
-        <div class="password">
+        
+        <div class="pw">
           <p>비밀번호</p>
           <input
             type="password"
             placeholder="비밀번호를 입력해 주새요."
-            id="inputpassword"
+            id="inputpw"
           />
           <img class="eye" src="../img/carbon_view.png" />
-          <div id="passwordError"></div>
+          <div id="pwError" class="error"></div>
         </div>
-        <div class="passwordcheck">
+       
+        <div class="pwcheck">
           <p>비밀번호 확인</p>
-          <input
-            type="password"
-            placeholder="비밀번호를 한번 더 입력해 주새요."
-            id="inputpasswordCheck"
-          />
+          <input type="password" placeholder="비밀번호를 한번 더 입력해 주새요." id="inputpwCheck"/>
           <img class="checkeye" src="../img/carbon_view.png" />
-          <div id="passwordCheckError"></div>
+          <div id="pwCheckError" class="error"></div>
         </div>
-        <button class="success">완료</button>
+        
+        <input class="success" type="button" disabled/>
       </div>
     </section>
+    
     <script src="signup.js"></script>
   </body>
 </html>
