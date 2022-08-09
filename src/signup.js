@@ -1,43 +1,55 @@
-let name = document.getElementById("inputname").value;
-let id = document.getElementById("inputid").value;
-let password = document.getElementById("inputpassword").value;
-let passwordCheck = document.getElementById("inputpasswordCheck").value;
+const name = document.getElementById("inputname");
+const id = document.getElementById("inputid");
+const pw = document.getElementById("inputpw");
+const pwCheck = document.getElementById("inputpwCheck");
 const successbtn = document.querySelector(".success");
 check = true;
 
 successbtn.addEventListener("click", btn);
+name.addEventListener("keyup", signcheck);
+id.addEventListener("keyup", signcheck);
+pw.addEventListener("keyup", signcheck);
+pwCheck.addEventListener("keyup", signcheck);
+
+function signcheck(){
+  if(!(name.value && id.value && pw.value && pwCheck.value)){
+    successbtn.style.backgroud = '#5F85BB';
+  }
+}
 
 function btn() {
-    if (name === "") {
+    if (name.value === "") {
         document.getElementById("nameError").innerHTML = "이름이 올바르지 않습니다.";
         check = false;
       } else {
         document.getElementById("nameError").innerHTML = "";
+        check = true;
       }
       
-      if (id === "") {
+      if (id.value === "") {
         document.getElementById("idError").innerHTML = "아이디가 올바르지 않습니다.";
         check = false;
       } else {
         document.getElementById("idError").innerHTML = "";
+        check = true;
       }
       
-      if (password === "") {
-        document.getElementById("passwordError").innerHTML = "비밀번호가 올바르지 않습니다.";
+      if (pw.value === "") {
+        document.getElementById("pwError").innerHTML = "비밀번호가 올바르지 않습니다.";
         check = false;
       } else {
-        document.getElementById("passwordError").innerHTML = "";
+        if (pwCheck.value !== pw.value) {
+            document.getElementById("pwCheckError").innerHTML = "비밀번호를 다시 확인해주세요.";
+            document.getElementById("pwError").innerHTML = "";
+            check = false;
+          } else {
+            document.getElementById("pwError").innerHTML = "";
+            document.getElementById("pwCheckError").innerHTML = "";
+            check = true;
+          }
       }
-      
-      if (passwordCheck !== password) {
-        document.getElementById("passwordCheckError").innerHTML = "비밀번호를 다시 확인해주세요.";
-        document.getElementById("password").innerHTML = "";
-        check = false;
-      } else {
-        document.getElementById("passwordCheckError").innerHTML = "";
+      if(check){
+        alert("가입이 성공되셨습니다."); 
       }
-}
 
-if (check) {
-  document.querySelector(".success").setAttribute("style", "backgroud:#5F85BB;");
 }
