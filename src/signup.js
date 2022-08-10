@@ -49,7 +49,7 @@ function btn() {
           }
       }
       if(check){
-        alert("가입이 성공되셨습니다."); 
+        alert("가입이 성공되셨습니다.");
+        location.href="login.html";
       }
-
 }
