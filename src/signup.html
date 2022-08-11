@@ -23,10 +23,10 @@
       <div class="container">
         <p class="signup">회원가입</p>
         
-        <div class="name">
+        <div class="naming">
           <p>이름</p>
-          <input type="text" placeholder="이름을 입력해 주새요." id="inputname" />
-          <div id="nameError" class="error"></div>
+          <input type="text" placeholder="이름을 입력해 주새요." id="inputnaming" />
+          <div id="namingError" class="error"></div>
         </div>
         
         <div class="id">
@@ -42,7 +42,8 @@
             placeholder="비밀번호를 입력해 주새요."
             id="inputpw"
           />
-          <img class="eye" src="../img/carbon_view.png" />
+          <img class="eye" id="eye" src="../img/carbon_view.png" />
+          <img class="eyeOff" src="../img/carbon_view-off.png" />
           <div id="pwError" class="error"></div>
         </div>
        
@@ -50,10 +51,11 @@
           <p>비밀번호 확인</p>
           <input type="password" placeholder="비밀번호를 한번 더 입력해 주새요." id="inputpwCheck"/>
           <img class="checkeye" src="../img/carbon_view.png" />
+          <img class="checkeyeOff" src="../img/carbon_view-off.png" />
           <div id="pwCheckError" class="error"></div>
         </div>
         
-        <button class="success" disabled>로그인</button>
+        <button class="success" disabled='disabled'>로그인</button>
       </div>
     </section>
     
