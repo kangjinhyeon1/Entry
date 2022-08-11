@@ -1,28 +1,46 @@
-const name = document.getElementById("inputname");
+const naming = document.getElementById("inputnaming");
 const id = document.getElementById("inputid");
 const pw = document.getElementById("inputpw");
 const pwCheck = document.getElementById("inputpwCheck");
 const successbtn = document.querySelector(".success");
+const eyee = document.getElementById("eye");
+const eyecheck = document.querySelector(".checkeye");
+const eyeOff = document.querySelector(".eyeOff");
+const checkeyeOff = document.querySelector(".checkeyeOff");
 check = true;
 
 successbtn.addEventListener("click", btn);
-name.addEventListener("keyup", signcheck);
+naming.addEventListener("keyup", signcheck);
 id.addEventListener("keyup", signcheck);
 pw.addEventListener("keyup", signcheck);
 pwCheck.addEventListener("keyup", signcheck);
+eyee.addEventListener("click", pws);
+
 
 function signcheck(){
-  if(!(name.value && id.value && pw.value && pwCheck.value)){
-    successbtn.style.backgroud = '#5F85BB';
+  if(naming.value && id.value && pw.value && pwCheck.value){
+    successbtn.disabled = false;
+    successbtn.style.cursor = "pointer";
+    successbtn.style.background = "#5F85BB";
+  }else{
+    successbtn.disabled = true;
+    successbtn.style.background = "lightgray";
+    successbtn.style.cursor = "default";
   }
 }
 
+function pws(){
+  console.log(1);
+}
+
+
+
 function btn() {
-    if (name.value === "") {
-        document.getElementById("nameError").innerHTML = "이름이 올바르지 않습니다.";
+    if (naming.value === "") {
+        document.getElementById("namingError").innerHTML = "이름이 올바르지 않습니다.";
         check = false;
       } else {
-        document.getElementById("nameError").innerHTML = "";
+        document.getElementById("namingError").innerHTML = "";
         check = true;
       }
       
