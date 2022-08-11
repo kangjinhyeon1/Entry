@@ -23,21 +23,24 @@ p{
     font-size: 14px;
     color: black;
 }
-.name{
+.naming{
     margin-top: 12px;
 }
-.eye{
+.eye, .eyeOff{
     width: 15px;
     position: absolute;
     top: 425px;
     left: 870px;
     bottom: 320px;
 }
-.checkeye{
+.checkeye, .checkeyeOff{
     width: 15px;
     position: absolute;
     left: 870px;
     top: 495px;
+}
+.eyeOff, .checkeyeOff{
+    opacity: 0;
 }
 input{
     border: 1px solid darkgray;
@@ -58,11 +61,10 @@ input{
     font-size: 14px;
     width: 260px;
     height: 34px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: none;
     background: lightgray;
     color: white;
     border-radius: 3px;
-    cursor: pointer;
     padding: 0;
   }
