@@ -40,7 +40,7 @@ p{
     top: 495px;
 }
 .eyeOff, .checkeyeOff{
-    opacity: 0;
+    display: none;
 }
 input{
     border: 1px solid darkgray;
