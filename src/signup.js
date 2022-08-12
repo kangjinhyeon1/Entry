@@ -3,7 +3,7 @@ const id = document.getElementById("inputid");
 const pw = document.getElementById("inputpw");
 const pwCheck = document.getElementById("inputpwCheck");
 const successbtn = document.querySelector(".success");
-const eyee = document.getElementById("eye");
+const eye = document.querySelector(".eye");
 const eyecheck = document.querySelector(".checkeye");
 const eyeOff = document.querySelector(".eyeOff");
 const checkeyeOff = document.querySelector(".checkeyeOff");
@@ -14,7 +14,10 @@ naming.addEventListener("keyup", signcheck);
 id.addEventListener("keyup", signcheck);
 pw.addEventListener("keyup", signcheck);
 pwCheck.addEventListener("keyup", signcheck);
-eyee.addEventListener("click", pws);
+eye.addEventListener("click", pws);
+eyeOff.addEventListener("click", pwsOff);
+eyecheck.addEventListener("click", checkpws);
+checkeyeOff.addEventListener("click", checkpwsOff);
 
 
 function signcheck(){
@@ -30,7 +33,24 @@ function signcheck(){
 }
 
 function pws(){
-  console.log(1);
+  eye.style.display = "none";
+  eyeOff.style.display = "block";
+  pw.setAttribute("type", "text");
+}
+function pwsOff(){
+  eye.style.display = "block";
+  eyeOff.style.display = "none";
+  pw.setAttribute("type", "password");
+}
+function checkpws(){
+  eyecheck.style.display = "none";
+  checkeyeOff.style.display = "block";
+  pwCheck.setAttribute("type", "text");
+}
+function checkpwsOff(){
+  eyecheck.style.display = "block";
+  checkeyeOff.style.display = "none";
+  pwCheck.setAttribute("type", "password");
 }
 
 
